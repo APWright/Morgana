@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Main</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.2/codemirror.js"></script>
+    <script src="https://codemirror.net/addon/mode/simple.js"></script>
+    <script src="https://codemirror.net/addon/edit/matchbrackets.js"></script>
+    <script src="https://codemirror.net/addon/edit/closebrackets.js"></script>
+    <script src="https://codemirror.net/addon/hint/show-hint.js"></script>
+
+    <script src="https://codemirror.net/addon/hint/anyword-hint.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.2/codemirror.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/firacode/5.2.0/fira_code.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://codemirror.net/addon/hint/show-hint.css"
+    />
+
+    <script src="lib/editor.js"></script>
+    <script src="lib/main.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script>
+      var app = Elm.Main.init({
+        node: document.getElementById('app'),
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "Operational category": "ABC",
+  "Level": "CAT-A",
+  "Cognizant engineer": "George P Burdell",
+  "Flight Rule ID": "ABC-A-0123",
+  "Flight rule title": "Test Rule",
+  "Description": "When in mission phase 1 every 2 days the camera is calibrated and the power is cycled",
+  "Rationale": "This is a simple dummy rule meant to test the flight rule interface",
+  "Violation impact": "This rule by definition has no impact",
+  "LogicSpec": "IF mission_phase_1 THEN \n  WITHIN 3 D (camera_calibration AND  power_cycle)"
+}

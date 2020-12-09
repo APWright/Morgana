@@ -1,0 +1,72 @@
+{
+  "camera_calibration": [
+    {
+      "Time": 1867021570373,
+      "Value": true
+    },
+    {
+      "Time": 1867024930373,
+      "Value": false
+    },
+    {
+      "Time": 1867183570373,
+      "Value": true
+    },
+    {
+      "Time": 1867186930373,
+      "Value": false
+    },
+    {
+      "Time": 1867410370373,
+      "Value": true
+    },
+    {
+      "Time": 1867413730373,
+      "Value": false
+    }
+  ],
+  "mission_phase_1": [
+    {
+      "Time": 1866918886383,
+      "Value": false
+    },
+    {
+      "Time": 1866929770373,
+      "Value": false
+    },
+    {
+      "Time": 1866935170373,
+      "Value": true
+    },
+    {
+      "Time": 1867320070373,
+      "Value": false
+    }
+  ],
+  "power_cycle": [
+    {
+      "Time": 1867021570373,
+      "Value": true
+    },
+    {
+      "Time": 1867028530373,
+      "Value": false
+    },
+    {
+      "Time": 1867266370373,
+      "Value": true
+    },
+    {
+      "Time": 1867275730373,
+      "Value": false
+    },
+    {
+      "Time": 1867381570373,
+      "Value": true
+    },
+    {
+      "Time": 1867388530373,
+      "Value": false
+    }
+  ]
+}

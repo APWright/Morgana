@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap');
+
+body {
+  margin: 0px;
+}
+
+p {
+  font-size: small;
+}
+pre {
+  font-family: 'Fira Code';
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3b3f42;
+  user-select: none;
+}
+
+li {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Mulish';
+  font-weight: 600;
+}
+
+select {
+  float: right;
+  display: block;
+  background-color: #3b3f42;
+  color: white;
+  border: none;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-family: 'Mulish';
+  outline: none;
+}
+select:active {
+  outline: none;
+}
+option {
+  background-color: rgb(150, 150, 150);
+  color: white;
+  font-family: 'Mulish';
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+  font-family: 'Mulish';
+  font-weight: 400;
+  margin: 0px;
+}
+
+li a:hover:not(.active) {
+  background-color: #99acc0;
+}
+
+.active {
+  background-color: #5290d6;
+}
+
+.legend-overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000080;
+  z-index: 2;
+  cursor: pointer;
+}
+.legend-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5%;
+  width: auto;
+  max-height: 90%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: flex;
+  position: fixed;
+}
+
+.left {
+  max-width: 65%;
+  width: 65%;
+  height: 100%;
+  max-height: 100%;
+  float: left;
+  user-select: none;
+  overflow: hidden;
+}
+button {
+  width: 28%;
+  height: 32px;
+  margin-bottom: 16px;
+  align-self: center;
+  margin-top: 16px;
+  margin-left: 16%;
+  font-family: 'Mulish';
+  font-weight: 600;
+  color: white;
+  background-color: #3b3f42;
+  border-radius: 20px;
+  border-color: transparent;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #99acc0;
+}
+
+button:active {
+  background-color: #3b3f42;
+}
+
+.codemirror {
+  height: 200px;
+  overflow: auto;
+  border: 1px solid silver;
+  font-family: 'Fira Code';
+  font-size: 12px;
+}
+.cm-grouping {
+  color: rgb(47, 35, 219);
+}
+.formulaText {
+  font-family: 'Fira Code';
+  margin-bottom: 16px;
+  height: 100px;
+  font-size: smaller;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  border: #3b3f42 solid 1px;
+  background-color: #efefef;
+}
+.right {
+  width: 35%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.Helix {
+  font-family: 'Mulish';
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 160%;
+  height: 75px;
+  resize: none;
+  margin-bottom: 10px;
+}
+.blank-buffer {
+  height: 200px;
+}
+
+.diagramCanvas {
+  background-color: #efefef;
+  height: 70%;
+}
+.diagramCanvas.OverallViolation {
+  background-color: hsla(0, 60%, 50%, 0.1);
+}
+.fullHeight > svg {
+  height: 100%;
+}
+
+svg {
+  display: block;
+}
+
+.timeline {
+  top: 50%;
+  bottom: 100%;
+  height: 50%;
+  max-height: 50%;
+  width: 100%;
+  max-width: 100%;
+  margin: 0px;
+  background: #fbfbfb;
+  overflow-y: scroll;
+}
+
+.ScrubberContainer {
+  display: flex;
+  margin: 0px;
+  height: 20px;
+  border-top: lightgray 1px;
+  border-bottom: lightgray 1px;
+  background: #d3d4d8;
+}
+.ScrubberInput {
+  margin: 0px;
+  height: 20px;
+  margin-left: 15.5%;
+  width: 100%;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  background: transparent;
+}
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: black;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px #4b4b4b;
+  cursor: grab;
+  height: 20px;
+  width: 10px;
+  border: 0;
+}
+input[type='range']::-webkit-slider-thumb:active {
+  cursor: grabbing;
+}
+.ScrubberLine {
+  stroke: black;
+  stroke-width: 0.2px;
+}
+.ScrubberResidual {
+  stroke: black;
+  stroke-width: 5px;
+  stroke-dasharray: 0.2 0.2;
+}
+
+.ScrubberResidual.Rule.EstimateTrue {
+  stroke: hsl(200, 40%, 35%);
+}
+.ScrubberResidual.Rule.EstimateFalse {
+  stroke: rgba(25, 25, 25, 0.25);
+}
+.ScrubberResidual.EstimateTrue {
+  stroke: rgb(25, 25, 25);
+}
+.ScrubberResidual.EstimateFalse {
+  stroke: rgba(25, 25, 25, 0.25);
+}
+
+.Rule.EstimateTrue {
+  fill: hsl(200, 70%, 70%);
+}
+
+.Rule.EstimateFalse {
+  fill: hsl(0, 80%, 60%);
+}
+
+.EstimateTrue {
+  fill: rgb(25, 25, 25);
+}
+
+.EstimateFalse {
+  fill: rgba(25, 25, 25, 0.25);
+}
+
+.TimelineContainer {
+  display: flex;
+  margin: 0px;
+  height: 30px;
+  border-bottom: rgb(226, 226, 226) solid 1px;
+}
+
+.TimelineLabel {
+  max-width: 16%;
+  width: 16%;
+  float: left;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  font-family: 'Fira Code';
+  border-right: black 3px;
+
+  padding-left: 16px;
+  margin: 0px;
+  line-height: 30px;
+  font-size: 12px;
+  text-align: left;
+}
+.TimelineView {
+  margin-left: 1%;
+  width: 99%;
+  padding-left: 0px;
+  padding-right: 6px;
+}
+.TimelineSvg {
+  overflow: visible;
+}
+
+/* Evaluation Color Codings */
+
+.Violation.EvalFalse.shape {
+  fill: hsl(0, 60%, 50%);
+}
+.Violation.EvalFalse.shape.inner {
+  fill: hsl(0, 80%, 60%);
+}
+.Violation.EvalFalse.line {
+  stroke: hsl(0, 60%, 50%);
+}
+.Violation.EvalTrue.shape {
+  fill: hsl(200, 40%, 35%);
+}
+.Violation.EvalTrue.shape.inner {
+  fill: hsl(200, 70%, 70%);
+}
+.Violation.EvalTrue.line {
+  stroke: hsl(200, 40%, 35%);
+}
+
+.Validation.EvalFalse.shape {
+  fill: hsl(0, 00%, 35%);
+}
+.Validation.EvalFalse.inner {
+  fill: hsl(0, 0%, 50%);
+}
+.Validation.EvalFalse.line {
+  stroke: hsl(0, 00%, 35%);
+}
+
+.Validation.EvalTrue.shape {
+  fill: hsl(200, 40%, 50%);
+}
+.Validation.EvalTrue.shape.inner {
+  fill: hsl(200, 70%, 70%);
+}
+.Validation.EvalTrue.line {
+  stroke: hsl(200, 40%, 50%);
+}
+
+.Undetermined.shape {
+  fill: hsl(0, 0%, 75%);
+}
+.Undetermined.shape.inner {
+  fill: hsl(0, 0%, 85%);
+}
+.Undetermined.line {
+  stroke: hsl(0, 0%, 75%);
+}
